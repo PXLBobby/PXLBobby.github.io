@@ -494,6 +494,9 @@ marquee span:before {
 .right-blog {
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .right-blog {
