@@ -144,8 +144,9 @@ img:hover {
 }
 
 .blog {
-  background-color: #e9e6e4;
-  max-width: auto;
+  background: linear-gradient(-90deg, #ffc5a7, hsl(154, 77%, 86%), #b79aff);
+  background-size: 400% 400%;
+  animation: gradient2 30s ease infinite;  max-width: auto;
   display: grid;
   height: 90vh;
   max-height: auto;
@@ -156,6 +157,17 @@ img:hover {
   padding: 40px 4px;
   position: relative;
 }
+@keyframes gradient2 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} 
 @media screen and (max-width: 1030px) {
   .blog {
     grid-template-columns: 20% 50% 30%;
